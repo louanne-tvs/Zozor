@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Ballpark';
+    src: url('tp_images_polices/polices/ballpark.eot');
+    src: url('tp_images_polices/polices/ballpark.ttf') format('truetype'),
+         url('tp_images_polices/polices/ballpark.svg') format('svg'),
+         url('tp_images_polices/polices/ballpark.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dayrom';
+    src: url('tp_images_polices/polices/dayrom.eot');
+    src: url('tp_images_polices/polices/dayrom.woff') format('woff'),
+         url('tp_images_polices/polices/dayrom.ttf') format('truetype'),
+         url('tp_images_polices/polices/dayrom.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url('tp_images_polices/images/fond_jaune.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+#main_wrapper {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
+
+#main_section h1, footer h1, nav a {
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+
+header {
+    background: url('tp_images_polices/images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img {
+    width: 59px;
+    height: 60px;
+}
+
+header h1 {
+    font-family: 'Ballpark', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2 {
+    font-family: 'Dayrom', serif;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    font-size: 1.3em;
+    color: #181818;
+    text-decoration: none; /*permet de retirer le soulignement des liens */
+}
+
+nav a:hover {
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+
+
+#banner {
+    position: relative;
+    max-width: 950px;
+    margin: 15px 0 25px 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #1c1a19;
+    overflow: hidden;
+    display: flex;  /* permet de supprimer la marge qui est là par défaut dans le comportement "bloc". Flex permet de supp ces marges */
+    flex-direction: column;
+}
+
+
+
+#banner button {
+    background: url('tp_images_polices/images/fond_degraderouge.png') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+   
+}
+
+#banner p {
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding-left: 8px;
+}
+
+#banner a {
+    padding-right: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.black_background {
+    background-color: rgba(24,24,24,0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box; /*permet de dire de prendre le padding dans la largeur max =
+    width 100% = taille de la div en prenant en compte le padding */
+}
+
+
+#main_section {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-start; /*par défaut c'est stretch et on veut que ça prenne la taille minimale */
+}
+
+#about_me {
+    flex: 1.2;
+    background: #706b64;
+    color: white;
+    padding: 0 10px 10px 10px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px #1c1a19;
+}
+
+#about_me h1 {
+    font-size: 1.2em;
+}
+
+#presentation_article {
+    flex: 3;
+    margin: 0 30px 0 0;
+}
+
+#presentation_article h1 {
+    display: flex;
+    align-items: center;
+}
+
+#presentation_article h1 img {
+    margin-right: 10px;
+}
+
+#presentation_article p, #about_me p {
+    text-align: justify;
+}
+
+#logo_socialmedia {
+    display: flex;
+    justify-content: space-between;
+}
+
+#arrow {
+    position: absolute;
+    top: 155px;
+    left: -10px;
+}
+
+#zozor_picture {
+    display: flex;
+    justify-content: center;
+}
+
+
+footer {
+    display: flex;
+    background: url('tp_images_polices/images/separateur.png') repeat-x top, url('tp_images_polices/images/ombre.png') repeat-x top;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+footer p, footer ul {
+    font-size: 0.8em;
+}
+
+
+#last_tweet {
+    display: flex;
+    flex-direction: column;
+    flex: 0.8;
+}
+
+#my_pictures {
+    flex: 1;
+}
+
+
+#pictures img {
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+
+#my_friends {
+    flex: 1;
+}
+
+
+#friends_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+#friends_list ul {
+    list-style-image: url('tp_images_polices/images/ico_liensexterne.png'); 
+    padding-left: 8px;
+    margin-top: 0;
+}
+
+#friends_list a {
+    text-decoration: none;
+    color:#760001;
+}
+
+#arrow_top {
+    position: absolute;
+    top: 4px;
+    left: 475px;
+}
+
+#last_tweet, #my_pictures, #my_friends {
+    margin-top: 22px;
+    padding: 0px 5px 0 5px;
+}
+
